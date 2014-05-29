@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Baby Name Generator</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class="container cf">
+			<img class="logo" src="img/newshour-logo.png">
+			<h1 class="title">Baby Name Generator</h1>
+			<button class="submit" onclick="generator.submit()">Boom</button>
+		</div>
+
+		<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="x-handlebars-template" id="result">
+			<img class="logo" src="img/newshour-logo.png">
+			<h1 class="generated">{{ genName }}</h1>
+			<h2>Derived from {{ fullName }}</h2>
+			<div class="likes">
+				<i onclick="generator.submitPoll(0);" class="fa fa-4x fa-thumbs-o-down left"></i>
+				<i onclick="generator.submitPoll(1);" class="fa fa-4x fa-thumbs-o-up right"></i>
+			</div>
+			<button class="again" onclick="location.reload();">Again!</button>
+		</script>
+	</body>
+</html>

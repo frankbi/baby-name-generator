@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, button, img {
+	margin:0px;
+	padding:0px;
+}
+
+i {
+	box-shadow:2px 2px 2px 2px silver;
+	padding:10px 20px 10px 20px;
+	cursor:pointer;
+}
+
+i:hover {
+	box-shadow:1px 1px 1px 1px silver;
+}
+
+.container {
+	width:420px;
+	padding:10px;
+	margin:2.5% auto;
+	border:1px solid silver;
+	font-family: 'Roboto Slab', serif;
+	text-align:center;
+	box-shadow:2px 2px 2px 2px silver;
+}
+
+.likes {
+	width:65%;
+	height:60px;
+	margin:20px auto 40px auto;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+img.logo {
+	width:90%;
+}
+
+h1.title {
+	font-size:23px;
+	text-transform:uppercase;
+}
+
+h1.generated {
+	font-size:35px;
+}
+
+button.submit,
+button.again {
+	width:85%;
+	height:40px;
+	margin:10px 0 10px 0;
+	border:0px;
+	color:white;
+	background-color:steelblue;
+	font-size:15px;
+	font-weight:700;
+	text-transform:uppercase;
+	cursor:pointer;
+	box-shadow:2px 2px 2px 2px silver;
+}
+
+button:hover {
+	box-shadow:1px 1px 1px 1px silver;
+}
