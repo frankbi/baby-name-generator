@@ -6,13 +6,13 @@ var generator = {
 	},
 
 	getNames: function() {
-		$.getJSON("names.json", function(data) {
+		$.getJSON("data/names.json", function(data) {
 			generator.getRandomName(data);
 		})
 	},
 
 	getSuffix: function() {
-		$.getJSON("suffix.json", function(data) {
+		$.getJSON("data/suffix.json", function(data) {
 			generator.getRandomSuffix(data);
 		})
 	},
